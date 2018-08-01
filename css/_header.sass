@@ -1,0 +1,58 @@
+// INICIO DE HEADER
+header
+	background: url('../img/fondo88888.jpg') no-repeat
+	background-size: 120% 160%
+	background-position: center
+	height: 500px
+	max-height: 500px
+	.menu
+		text-align: right
+		margin: 30px 0
+		a
+			display: inline-block
+			font-size: 1em
+			text-decoration: none
+			color: #fff
+			margin: 0 20px
+			padding-bottom: 5px 
+			border-bottom: 2px solid transparent
+			&:hover
+				border-bottom: 2px solid #fff
+	.caja-texto
+		display: flex
+		justify-content: center
+		align-content: center
+		margin: 120px 0
+		.nombreprofesion
+			background: rgba(#E8F7EE,.2)
+			border: 2px solid rgba(#fff,.5)
+			border-radius: 5px
+			text-align: center
+			padding: 20px 20px
+			color: #fff
+			letter-spacing: 5px
+		.nombre
+			font-weight: bold
+			font-size: 30px
+			margin: 0
+			padding-bottom: 25px
+		.profesion
+			font-size: 22px
+			margin: 0
+			.parpadeo
+				position: relative
+				right: 7px
+				font-weight: 300
+				font-size: 28px
+				animation-name: parpadeo
+				animation-duration: 1.2s
+				animation-timing-function: linear
+				animation-iteration-count: infinite
+@keyframes parpadeo
+	0%
+		opacity: 1.0
+	50%
+		opacity: 0.0
+	100%
+		opacity: 1.0
+// FIN DE HEADER

@@ -1,0 +1,343 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  display: block; }
+
+body {
+  background: #fff;
+  font-family: "Ubuntu", sans-serif, helvetica;
+  font-size: 16px; }
+
+.wrapper {
+  width: 85%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  background: url("../img/fondo88888.jpg") no-repeat;
+  background-size: 120% 160%;
+  background-position: center;
+  height: 500px;
+  max-height: 500px; }
+  header .menu {
+    text-align: right;
+    margin: 30px 0; }
+    header .menu a {
+      display: inline-block;
+      font-size: 1em;
+      text-decoration: none;
+      color: #fff;
+      margin: 0 20px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent; }
+      header .menu a:hover {
+        border-bottom: 2px solid #fff; }
+  header .caja-texto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 120px 0; }
+    header .caja-texto .nombreprofesion {
+      background: rgba(232, 247, 238, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      text-align: center;
+      padding: 20px 20px;
+      color: #fff;
+      letter-spacing: 5px; }
+    header .caja-texto .nombre {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 0;
+      padding-bottom: 25px; }
+    header .caja-texto .profesion {
+      font-size: 22px;
+      margin: 0; }
+      header .caja-texto .profesion .parpadeo {
+        position: relative;
+        right: 7px;
+        font-weight: 300;
+        font-size: 28px;
+        animation-name: parpadeo;
+        animation-duration: 1.2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; }
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.main .wrapper {
+  overflow: visible; }
+  .main .wrapper .foto {
+    margin-top: -90px; }
+    .main .wrapper .foto img {
+      vertical-align: top;
+      border-radius: 50%;
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      height: 180px;
+      width: 180px; }
+
+.Franco {
+  text-align: center; }
+  .Franco .aboutme {
+    color: #565254;
+    font-weight: 300;
+    margin-bottom: 44px; }
+    .Franco .aboutme p {
+      margin: 44px;
+      font-style: italic; }
+    .Franco .aboutme .skills {
+      color: #5E807F;
+      font-size: 22px;
+      font-style: normal;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 60px; }
+    .Franco .aboutme .combo {
+      color: #5E807F;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      text-align: center;
+      letter-spacing: 8px;
+      margin: 12px; }
+
+span {
+  font-weight: 600; }
+
+.underline {
+  text-decoration: underline; }
+
+.locationandwork {
+  background: rgba(232, 247, 238, 0.4);
+  font-size: 14px;
+  color: #5E807F;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 4px; }
+  .locationandwork .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
+    .locationandwork .wrapper .location {
+      padding: 44px 0;
+      padding-left: 120px; }
+      .locationandwork .wrapper .location .iconuno {
+        font-size: 26px; }
+    .locationandwork .wrapper .work {
+      padding: 44px 0;
+      padding-right: 120px; }
+      .locationandwork .wrapper .work .icondos {
+        font-size: 26px; }
+
+hr {
+  margin: 0 0;
+  border: 4px solid #fff; }
+
+.main-projects {
+  background: rgba(232, 247, 238, 0.4);
+  width: 100%;
+  color: #5E807F;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 64px 0; }
+  .main-projects .projectstitle {
+    font-size: 22px;
+    margin: 0 0;
+    padding-bottom: 20px; }
+  .main-projects .contenedor-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+    .main-projects .contenedor-projects .project {
+      width: 23%; }
+      .main-projects .contenedor-projects .project .thumb {
+        width: 100%; }
+        .main-projects .contenedor-projects .project .thumb img {
+          width: 100%;
+          vertical-align: top; }
+      .main-projects .contenedor-projects .project .category {
+        font-size: 14px; }
+
+.separate {
+  text-align: center;
+  font-size: 48px;
+  color: #eee;
+  padding-top: 44px; }
+
+footer {
+  font-size: 14px;
+  color: #5E807F;
+  font-style: normal; }
+  footer .contact {
+    padding-bottom: 44px; }
+    footer .contact .contacttitle {
+      font-size: 22px;
+      color: #5E807F;
+      font-style: normal;
+      letter-spacing: 4px;
+      text-align: center; }
+  footer .formulary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .formulary .name, footer .formulary .email, footer .formulary textarea {
+      border: 2px solid #c2c2c2;
+      border-radius: 4px;
+      font-size: 20px;
+      color: #565254;
+      width: 40%;
+      margin-bottom: 16px; }
+    footer .formulary textarea {
+      width: 100%;
+      height: 120px;
+      max-width: 100%;
+      max-height: 200px; }
+    footer .formulary .name:focus, footer .formulary .email:focus, footer .formulary textarea:focus {
+      border: 2px solid #B8336A;
+      outline: none; }
+    footer .formulary .send {
+      display: block;
+      margin: auto;
+      background: #B8336A;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 20px 40px; }
+    footer .formulary .send:hover {
+      background: #561643; }
+  footer .redes-sociales {
+    background: #323031;
+    padding: 40px 0; }
+    footer .redes-sociales .wrapper {
+      display: flex;
+      justify-content: center; }
+      footer .redes-sociales .wrapper a {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        width: 100px;
+        text-align: center;
+        padding: 20px 40px;
+        border-radius: 6px;
+        margin: 0 26px; }
+      footer .redes-sociales .wrapper .linkedin:hover {
+        background: #0077b5; }
+      footer .redes-sociales .wrapper .facebook:hover {
+        background: #3b5998; }
+
+@media screen and (max-width: 800px) {
+  header .menu {
+    text-align: center; }
+
+  .main-projects .contenedor-projects .project {
+    width: 45%; }
+    .main-projects .contenedor-projects .project .category {
+      margin-bottom: 40px; }
+
+  .locationandwork .wrapper {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 0; }
+    .locationandwork .wrapper .location {
+      padding: 0 0;
+      padding-bottom: 20px; }
+    .locationandwork .wrapper .work {
+      padding: 0 0; }
+
+  footer .formulary .name {
+    font-size: 14px; }
+  footer .formulary .email {
+    font-size: 14px; }
+  footer .formulary textarea {
+    font-size: 14px; } }
+@media screen and (max-width: 500px) {
+  footer .formulary .name {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 14px; }
+  footer .formulary .email {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px; }
+  footer .formulary textarea {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px; }
+  footer .redes-sociales .wrapper a {
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 10px 10px; } }
+@media screen and (max-width: 450px) {
+  body .wrapper {
+    width: 100%; }
+
+  header {
+    height: 400px; }
+    header .caja-texto {
+      width: 80%;
+      margin: 80px auto; }
+      header .caja-texto .profesion {
+        font-size: 16px; }
+        header .caja-texto .profesion .parpadeo {
+          font-size: 20px;
+          right: 5px; }
+
+  .Franco .aboutme p {
+    margin: 80px 0;
+    font-size: 14px; }
+  .Franco .aboutme .combo {
+    font-size: 14px;
+    margin: 0 0;
+    letter-spacing: 6px; }
+
+  .main .wrapper .foto {
+    margin: -60px; }
+    .main .wrapper .foto img {
+      height: 120px;
+      width: 120px; } }
+@media screen and (max-width: 400px) {
+  .main-projects .contenedor-projects .project {
+    width: 50%; }
+    .main-projects .contenedor-projects .project .category {
+      font-size: 12px;
+      margin-bottom: 40px; }
+
+  .Franco h4 {
+    display: block;
+    width: 100%; } }
+@media screen and (max-width: 370px) {
+  header .menu {
+    font-size: 14px; }
+    header .menu a {
+      margin: 0 10px; }
+  header .caja-texto .nombreprofesion {
+    padding: 15px 15px; }
+    header .caja-texto .nombreprofesion .nombre {
+      font-size: 22px; }
+    header .caja-texto .nombreprofesion .profesion {
+      letter-spacing: 3px; }
+    header .caja-texto .nombreprofesion .parpadeo {
+      font-size: 20px;
+      right: 4px; } }
+
+/*# sourceMappingURL=estilos.css.map */
